@@ -81,6 +81,7 @@ class _ZoomTapAnimationState extends State<ZoomTapAnimation>
     }
 
     return GestureDetector(
+      behavior: HitTestBehavior.translucent,
       // call one tap event
       onTap: widget.onTap,
       // call long tap one event if the long tap repeat(loop) is false
